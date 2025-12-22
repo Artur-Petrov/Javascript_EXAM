@@ -10,13 +10,12 @@
   <link rel="stylesheet" href="styles/main_styles.css">
 </head>
 <body>
-<h1>Test</h1>
 <form id="mainForm">
-
+  <h1>Test</h1>
 <!--  Block with input field and Add button-->
 
   <div id="inputContainer">
-    <label>
+    <label> Name/Value Pair
       <input type="text" placeholder="Name=Value" name="usersInputField">
     </label>
     <button id="add-Btn" type="submit">Add</button>
@@ -25,10 +24,13 @@
   <!--  Block with output field and action buttons-->
 
   <div id="outputContainer">
+    <label>Name/Value Pair List</label>
     <ul id="usersOutputList"></ul>
-    <button id="sort-By-Name-Btn" type="button">Sort by Name</button>
-    <button id="sort-By-Value-Btn" type="button">Sort by Value</button>
-    <button id="delete-Btn" type="button">Delete</button>
+    <div id="buttons">
+      <button id="sort-By-Name-Btn" type="button">Sort by Name</button>
+      <button id="sort-By-Value-Btn" type="button">Sort by Value</button>
+      <button id="delete-Btn" type="button">Delete</button>
+    </div>
   </div>
 </form>
 
