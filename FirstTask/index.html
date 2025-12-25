@@ -15,17 +15,22 @@
 <!--  Block with input field and Add button-->
 
   <div id="inputContainer">
-    <label> Name/Value Pair
-      <input type="text" placeholder="Name=Value" name="usersInputField">
-    </label>
+    <div class="inputContainerField">
+      <label for="userInput"> Name/Value Pair</label>
+      <input type="text" placeholder="Name=Value" name="usersInputField" id="userInput">
+    </div>
     <button id="add-Btn" type="submit">Add</button>
   </div>
 
   <!--  Block with output field and action buttons-->
 
   <div id="outputContainer">
-    <label>Name/Value Pair List</label>
-    <ul id="usersOutputList"></ul>
+    <div class="labelListInput">
+      <label>Name/Value Pair List</label>
+      <div class="listWrapper">
+        <ul id="usersOutputList"></ul>
+        <p id="emptyMessage">List is empty</p></div>
+    </div>
     <div id="buttons">
       <button id="sort-By-Name-Btn" type="button">Sort by Name</button>
       <button id="sort-By-Value-Btn" type="button">Sort by Value</button>
