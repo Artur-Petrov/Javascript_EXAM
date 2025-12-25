@@ -52,7 +52,7 @@ button{
     border: 1px solid #aaa;
     border-radius: 4px;
     padding: 4px 8px;
-    min-width: 120px;
+    width: auto;
     height: 30px;
     cursor: pointer;
     font-size: 12px;
@@ -91,7 +91,9 @@ input:focus {
 input:focus::placeholder {
     color: transparent;
 }
+#add-Btn{
 
+}
 /*--------------------------------------------------------------------------------*/
 
 #inputContainer{
@@ -114,7 +116,8 @@ input:focus::placeholder {
     display: flex;
     gap: 10px;
     flex-direction: column;
-    min-width: 120px;
+    align-items: flex-start;
+    text-wrap: nowrap;
 }
 
 .labelListInput{
