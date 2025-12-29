@@ -139,6 +139,7 @@ input:focus::placeholder {
     border-radius: 4px;
     background-color: #fff;
     padding: 6px;
+    overflow-y: auto;
 }
 #emptyMessage {
     position: absolute;
@@ -151,19 +152,20 @@ input:focus::placeholder {
     pointer-events: none;
 }
 
-/*#usersOutputList li {*/
-/*    padding: 6px 10px;*/
-/*    border-bottom: 1px solid #f0f0f0;*/
-/*    cursor: pointer;*/
-/*    font-size: 14px;*/
-/*}*/
-/*#usersOutputList li:hover {*/
-/*    background-color: #eaf2ff;*/
-/*}*/
-/*#usersOutputList li.selected {*/
-/*    background-color: #9bb7f0;*/
-/*    color: white;*/
-/*}*/
+#usersOutputList li {
+    padding: 6px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+#usersOutputList li:hover {
+    background-color: #eaf2ff;
+}
+#usersOutputList li.selected {
+    background-color: #9bb7f0;
+    color: white;
+}
 
 /*responsive design for tablets and smartphone*/
 
