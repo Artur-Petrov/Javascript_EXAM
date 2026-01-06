@@ -40,3 +40,25 @@ fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
     `;
 })
 
+// button post
+postsBtn.addEventListener('click', () => {
+    postsContainer.innerHTML = ``;
+    fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`)
+    .then(res => res.json())
+    .then(posts => {
+        for (const post of posts) {
+            //container for posts titles
+            let postContainer = document.createElement('div');
+            postContainer.classList.add('posts-block');
+            postContainer.innerHTML = `<h3>${post.title}</h3>`
+            // link for directing to post-details.html
+            let postLink = document.createElement('a');
+            postLink.classList.add('post-link');
+            postLink.innerText = `Post Details`;
+            postLink.href = `post-details.html?id=${post.id}`;
+
+            postContainer.appendChild(postLink);
+            postsContainer.appendChild(postContainer);
+        }
+    })
+})
