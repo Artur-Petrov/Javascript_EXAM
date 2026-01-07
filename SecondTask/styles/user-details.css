@@ -1,6 +1,7 @@
 body{
     font-family: Arial, sans-serif;
     margin: 10px;
+    padding-bottom: 50px;
 }
 #user-details{
     width: 90%;
@@ -32,7 +33,6 @@ li{
     cursor: pointer;
     font-size: 12px;
     transition: 0.2s;
-    /*margin: 20px auto;*/
     margin: 20px auto 100px auto;
 }
 .post-link{
