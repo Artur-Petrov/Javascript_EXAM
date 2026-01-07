@@ -20,21 +20,21 @@ fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
     <li>Website: ${user.website}</li>
 
     <li>Address:
-        <ul>
+        <ol>
             <li>Street: ${user.address.street}</li>
             <li>Suite: ${user.address.suite}</li>
             <li>City: ${user.address.city}</li>
             <li>Zipcode: ${user.address.zipcode}</li>
             <li>Geo: ${user.address.geo.lat}, ${user.address.geo.lng}</li>
-        </ul>
+        </ol>
     </li>
 
     <li>Company:
-        <ul>
+        <ol>
             <li>Name: ${user.company.name}</li>
             <li>Catch Phrase: ${user.company.catchPhrase}</li>
             <li>BS: ${user.company.bs}</li>
-        </ul>
+        </ol>
     </li>
 </ul>
     `;

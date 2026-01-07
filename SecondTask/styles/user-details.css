@@ -1,6 +1,22 @@
 body{
     font-family: Arial, sans-serif;
+    margin: 8px;
 }
 #user-details{
-
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+ul{
+    margin-left: 20px;
+    padding-left: 10px;
+}
+ol{
+    margin: 10px 50px;
+    list-style-type: decimal;
+}
+li{
+    margin-bottom: 8px;
 }
