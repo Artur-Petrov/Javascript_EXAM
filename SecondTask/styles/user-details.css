@@ -1,7 +1,6 @@
 body{
     font-family: Arial, sans-serif;
     margin: 10px;
-    padding-bottom: 50px;
 }
 #user-details{
     width: 90%;
@@ -33,7 +32,7 @@ li{
     cursor: pointer;
     font-size: 12px;
     transition: 0.2s;
-    margin: 20px auto 100px auto;
+    margin: 20px auto;
 }
 .post-link{
     display: block;
@@ -53,6 +52,7 @@ li{
 }
 .posts-container{
     width: 90%;
+    min-height: 150px;
     margin: 0 auto;
     display: grid;
     grid-template-columns:repeat(5, 1fr);
