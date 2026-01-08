@@ -34,3 +34,9 @@ body{
 .details-btn:hover{
     background-color: #0a6c8c;
 }
+/*added responsive design*/
+@media (max-width: 480px) {
+    #wrapper{
+        grid-template-columns: 1fr;
+    }
+}

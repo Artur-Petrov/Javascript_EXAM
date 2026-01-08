@@ -50,7 +50,7 @@ li{
     font-size: 12px;
     transition: 0.2s;
 }
-.post-link:hover{
+.post-link:hover, .posts-btn:hover{
     background-color: #0a6c8c;
 }
 .posts-container{
