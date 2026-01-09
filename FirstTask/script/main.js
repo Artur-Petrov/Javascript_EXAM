@@ -31,7 +31,7 @@ mainForm.addEventListener('submit', function(e) {
 
         //validation with regular expressions
         let validation = /^[a-zA-Z0-9]+\s*=\s*[a-zA-Z0-9]+$/;
-
+        // case if validation is not correct
         if (!validation.test(inputTrim)) {
             throw new Error('Invalid input field');
         }
@@ -40,7 +40,7 @@ mainForm.addEventListener('submit', function(e) {
         let name = splitter[0].trim();
         let value = splitter[1].trim();
 
-        // creating kist of name value
+        // creating list of name value
 
         let li = document.createElement('li');
         li.innerText = `${name}=${value}`;
