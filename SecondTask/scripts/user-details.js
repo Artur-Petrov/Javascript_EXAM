@@ -12,28 +12,28 @@ fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
 .then(user=> {
     userDetailsContainer.innerHTML = `
 <ul>
-    <li>Id: ${user.id}</li>
-    <li>Name: ${user.name}</li>
-    <li>Username: ${user.username}</li>
-    <li>Email: ${user.email}</li>
-    <li>Phone: ${user.phone}</li>
-    <li>Website: ${user.website}</li>
+    <li><b>Id:</b> ${user.id}</li>
+    <li><b>Name:</b> ${user.name}</li>
+    <li><b>Username:</b> ${user.username}</li>
+    <li><b>Email:</b> ${user.email}</li>
+    <li><b>Phone:</b> ${user.phone}</li>
+    <li><b>Website:</b> ${user.website}</li>
 
-    <li>Address:
+    <li><b>Address:</b>
         <ol>
-            <li>Street: ${user.address.street}</li>
-            <li>Suite: ${user.address.suite}</li>
-            <li>City: ${user.address.city}</li>
-            <li>Zipcode: ${user.address.zipcode}</li>
-            <li>Geo: ${user.address.geo.lat}, ${user.address.geo.lng}</li>
+            <li><b>Street:</b> ${user.address.street}</li>
+            <li><b>Suite:</b> ${user.address.suite}</li>
+            <li><b>City:</b> ${user.address.city}</li>
+            <li><b>Zipcode:</b> ${user.address.zipcode}</li>
+            <li><b>Geo:</b> ${user.address.geo.lat}, ${user.address.geo.lng}</li>
         </ol>
     </li>
 
-    <li>Company:
+    <li><b>Company:</b>
         <ol>
-            <li>Name: ${user.company.name}</li>
-            <li>Catch Phrase: ${user.company.catchPhrase}</li>
-            <li>BS: ${user.company.bs}</li>
+            <li><b>Name:</b> ${user.company.name}</li>
+            <li><b>Catch Phrase:</b> ${user.company.catchPhrase}</li>
+            <li><b>BS:</b> ${user.company.bs}</li>
         </ol>
     </li>
 </ul>
